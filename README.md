@@ -46,8 +46,28 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 ### 📗 Rodando a Aplicação (server)
 
 ```bash
+# Clone este repositório
+$ git clone https://github.com/SamuelAuron/in.orbit.git
 
-Build
+# Entre na pasta server
+
+# Instale as dependências
+$ npm i
+
+# É necessário ter o docker instalado para executar o próximo passo
+# Inicialize os containers
+$ docker compose up -d
+
+# Execute as migrates
+$ npx drizzle-kit migrate
+
+# Opcional!
+# Insira algumas atividades no banco de dados
+$ npm run seed
+
+# Executa o server
+$ npm run dev
+
 ```
 
 
